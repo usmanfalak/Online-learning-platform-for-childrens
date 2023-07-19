@@ -1,0 +1,9 @@
+<section class="section--element">
+      <h2 class="section__heading">Let's Discuss your Goals</h2>
+      <p class="section__detail">
+        Lorem ipsum dolor sit amet, consectetur adipisicing.
+      </p>
+
+      <button class="btn__card-2 section__btn-1">Learn More</button>
+      <button class="btn__card-2 section__btn-2">Book Now</button>
+    </section>
