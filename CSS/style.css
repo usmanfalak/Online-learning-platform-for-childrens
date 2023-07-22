@@ -17,164 +17,274 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 150vh;
-  background-color: #d9d9d9;
+  background-color: #fff;
+  padding: 0 4rem;
 }
 
 /* Hero Section */
 
-.hero-section {
-  background-image: url(/images/hero-images/Hero-Image.png);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.hero--section {
+  border: 3px solid deeppink;
 }
 
-.hero__para,
-.section--element,
-.btn__card-2 {
-  color: #fff;
+.hero--section,
+.card--section {
+  text-align: center;
 }
 
-.hero__para {
-  margin-top: 0;
-  padding-top: 1.15rem;
-  font-family: sans-serif;
-  margin-left: 7rem;
-
-  font-size: 5rem;
+.hero__para-1,
+.hero__para-2 {
+  font-size: 2rem;
 }
-
 .hero__heading {
+  font-size: 3.5rem;
+}
+
+.hero__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero__border-line {
   display: block;
-  font-weight: 600;
-  font-size: 18.3rem;
-  margin-bottom: 8rem;
+  /* width: 100%; */
+  border: 0.2rem solid grey;
+  margin: 4rem 40% 1rem 40%;
 }
 
 /* Card Section */
 
-.card__image-1 {
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card__image-2 {
-  width: 40%;
-}
-
-.card__header {
-  text-align: center;
-}
-
-.card__header {
-  margin-top: 5rem;
-  font-size: 4rem;
-  font-weight: 700;
-}
-
-.card__body {
-  font-size: 2.5rem;
-  font-weight: 600;
-  padding: 1rem 4rem;
-}
-
-.card__secondary {
-  margin-top: 8rem;
-}
-.list--items {
-  margin-top: 4rem;
-  text-align: start;
-  font-size: 2.2rem;
-  line-height: 1.5;
-}
-
-.btn__card-2 {
-  background-color: transparent;
-  font-size: 2.5rem;
-  padding: 2rem;
-  margin: 6rem 2rem;
-  border: 1px solid #fff;
-  cursor: pointer;
-  color: #041a28;
-  border-color: black;
-}
-
-.section--element {
-  margin: 4rem 15rem 0.5rem 15rem;
-  padding-top: 3rem;
-  background-color: #041a28;
-  width: auto;
-  text-align: center;
-}
-
-.section__heading {
-  font-size: 5rem;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-.section__detail {
-  margin-top: 2rem;
-  margin-bottom: 0;
-  font-size: 3rem;
-  padding: 0;
-}
-.section__btn-1,
-.section__btn-2 {
-  margin-top: 4rem;
-  margin-bottom: 5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-.section__btn-1 {
+.card--section {
+  background: #2e607b;
   color: #fff;
-  border-color: #fff;
+  padding: 4rem;
+  margin: 0 2rem;
 }
 
-.section__btn-2 {
-  background-color: #fff;
-  color: #041a28;
+.card__heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 5rem 0;
 }
 
-.btn__card-2:hover {
-  transition: 0.15s;
-  color: dodgerblue;
-  border-color: dodgerblue;
+.card__para {
+  font-size: 2rem;
 }
 
-.section__btn-2:hover {
-  background-color: transparent;
-  border-color: dodgerblue;
+.website--info,
+.website__sub-info {
+  padding-bottom: 2rem;
 }
 
-.figure--image {
-  width: 100%;
+.website--info,
+.article--section {
+  text-align: center;
+}
+
+.website__sub-info {
+  margin: 0 5rem;
+  font-size: 1.2rem;
+}
+
+.website__sub-info-1 {
+  margin-top: 2rem;
+}
+
+.btn__enroll {
+  border: 0;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1.5rem 2.2rem;
+  background-color: #4bc287;
+  color: #fff;
+}
+
+/* Article Section */
+
+.article__heading {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.article--section {
+  background-color: #f4f4f4;
+}
+
+.article__spacing {
+  padding-bottom: 5rem;
+}
+
+.article__benifits-text {
+  font-size: 1.5rem;
+}
+.article__benifits-list {
+  font-size: 2.5rem;
+}
+
+.article__images {
+  width: 70%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
-  .card {
+  .hero__para-1,
+  .hero__para-2 {
+    font-size: 3rem;
+  }
+  .hero__heading {
+    font-size: 5rem;
+  }
+
+  .card__heading {
+    font-size: 3.5rem;
+  }
+
+  .card__para {
     display: flex;
-    align-items: start;
-    flex-direction: row;
-    /* border: 3px solid tomato; */
+    justify-content: space-around;
+    font-size: 2.5rem;
   }
 
-  .card__image-1 {
-    width: 30%;
-    padding-top: 2rem;
+  .card__para__elements {
+    margin: 0;
+    padding: 2rem 0 2.5rem 0;
   }
 
-  .card__div-2 {
-    width: 60%;
+  .card__border-line {
+    border-left: 3px solid #fff;
+    height: 150px;
+    margin: 0 2rem;
   }
 
-  .card__header {
+  /* sub--info--section */
+  .website__sub-info {
+    font-size: 2rem;
+  }
+
+  .btn__enroll {
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.5rem 2.2rem;
+    background-color: #4bc287;
+    color: #fff;
+  }
+
+  /* articlee sectionn */
+
+  .article__heading {
+    font-size: 5rem;
+  }
+
+  .article__benifits {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article__benifits-text {
+    font-size: 1.5rem;
+  }
+  .article__benifits-list {
+    font-size: 2.5rem;
+  }
+
+  .article__spacing {
+    width: 33.3%;
+  }
+
+  .article__border-horizontal {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+  }
+
+  .article__border-bottom {
+    border-bottom: 2px solid black;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  /* Hero Section */
+
+  .hero__para-1,
+  .hero__para-2 {
+    font-size: 3.5rem;
+  }
+  .hero__heading {
     font-size: 6rem;
-    padding-bottom: 1.5rem;
   }
 
-  .card-2__header {
+  /* card section */
+
+  .card__border-line {
+    border-left: 3px solid #fff;
+    height: 230px;
+    margin: 0 2rem;
+  }
+
+  .card__heading {
+    font-size: 4.5rem;
+  }
+
+  .card__para {
+    display: flex;
+    font-size: 3.5rem;
+  }
+
+  .card__para__elements {
+    margin: 0;
+    padding: 2rem 0 2.5rem 0;
+  }
+
+  /* websitee sub--info */
+  .website__sub-info {
+    font-size: 3rem;
+  }
+
+  /* button--enroll */
+  .btn__enroll {
+    border-radius: 7px;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem 3rem;
+    background-color: #4bc287;
+    color: #fff;
+  }
+  /* article--heading */
+
+  .article__heading {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .hero__para-1,
+  .hero__para-2 {
+    font-size: 4rem;
+  }
+  .hero__heading {
     font-size: 7rem;
+  }
+
+  /* card section */
+
+  .card__heading {
+    margin-bottom: 6rem;
+  }
+
+  /* articlee sectionn*/
+
+  .article__heading {
+    font-size: 7rem;
+  }
+
+  .article__benifits-text {
+    font-size: 2rem;
+  }
+  .article__benifits-list {
+    font-size: 3.5rem;
+  }
+
+  .article__spacing {
+    width: 33.3%;
   }
 }
